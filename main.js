@@ -1,12 +1,10 @@
 document.getElementById("registration-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Зупиняємо стандартну відправку форми
+    event.preventDefault(); 
 
-    // Отримуємо значення полів форми
     let name = document.getElementById("name").value;
     let surname = document.getElementById("surname").value;
     let birthdate = document.getElementById("birthdate").value;
     let gender = document.querySelector('input').value;
-                // Створюємо таблицю і додаємо заголовки
     let tableContainer = document.getElementById("table-container");
     let table = document.createElement("table");
     let headerRow = document.createElement("tr");
@@ -20,7 +18,6 @@ document.getElementById("registration-form").addEventListener("submit", function
 
     table.appendChild(headerRow);
 
-    // Додаємо рядок з даними користувача
     let dataRow = document.createElement("tr");
 
     let nameCell = document.createElement("td");
@@ -57,7 +54,6 @@ document.getElementById("registration-form").addEventListener("submit", function
 
     table.appendChild(dataRow);
 
-    // Очищаємо контейнер і додаємо таблицю
     tableContainer.innerHTML = "";
     tableContainer.appendChild(table);
 });
