@@ -1,0 +1,103 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" class="form">
+        <input type="text" class="name">
+        <input type="text" class="date">
+        <div class="male-wrap">
+            <label for="male">male</label>
+            <input type="radio" class="radio1">
+        </div>
+        <div class="female-wrap">
+            <label for="female">female</label>
+            <input type="radio" class="radio2">
+        </div>
+        <select class="select">
+            <label> виберіть місто</label>
+            <option value="1">Київ</option>
+            <option value="2">Хмельницький</option>
+            <option value="3">Івано-Франківський</option>
+        </select>
+        
+    </form>
+    <script src="./main.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма реєстрації</title>
+    <style>
+        /* Стилізація форми */
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label, input, select, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form id="registration-form">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="surname">Прізвище:</label>
+        <input type="text" id="surname" name="surname" required>
+        
+        <label for="birthdate">Дата народження:</label>
+        <input type="text" id="birthdate" name="birthdate" required>
+        
+        <label for="gender">Стать:</label>
+        <label><input type="radio" name="gender" value="male">Чоловік</label>
+        <label><input type="radio" name="gender" value="female">Жінка</label>
+        
+        <label for="city">Місто:</label>
+        <select id="city" name="city" required>
+            <option value="">Виберіть місто</option>
+            <option value="kyiv">Київ</option>
+            <option value="lviv">Львів</option>
+            <option value="odesa">Одеса</option>
+        </select>
+        
+        <label for="address">Адреса:</label>
+        <textarea id="address" name="address" required></textarea>
+        
+        <label>Мови, якими володієте:</label>
+        <label><input type="checkbox" name="languages" value="ukrainian">Українська</label>
+        <label><input type="checkbox" name="languages" value="english">Англійська</label>
+        
+        <input type="submit" value="Зберегти">
+    </form>
+
+    <div id="table-container" class="table-container"></div>
+
+    <script src="./main.js"> </script>
+</body>
+</html>
