@@ -11,7 +11,7 @@ document.getElementById("registration-form").addEventListener("submit", function
     let headers = ["Ім'я", "Прізвище", "Дата народження", "Стать", "Місто", "Адреса", "Мови"];
 
     for (var i = 0; i < headers.length; i++) {
-        var headerCell = document.createElement("th");
+        let headerCell = document.createElement("th");
         headerCell.textContent = headers[i];
         headerRow.appendChild(headerCell);
     }
